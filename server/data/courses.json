@@ -1,0 +1,33 @@
+[
+  {
+    "course_id": "stats_101",
+    "title": "Data Literacy and Statistical Reasoning",
+    "description": "Master core concepts in probability, distributions, and hypothesis testing through customized learning pathways.",
+    "topics": [
+      {
+        "topic_id": "normal_distribution",
+        "title": "Standard Deviation and the Normal Distribution",
+        "learning_objective": "Calculate and interpret z-scores and the Empirical Rule (68-95-99.7) to evaluate real-world spread and probability.",
+        "difficulty": "intermediate",
+        "prerequisites": ["basic_mean_median"],
+        "estimated_minutes": 15
+      },
+      {
+        "topic_id": "hypothesis_testing",
+        "title": "Hypothesis Testing and P-Values",
+        "learning_objective": "Formulate null and alternative hypotheses and interpret p-values in the context of statistical significance.",
+        "difficulty": "intermediate",
+        "prerequisites": ["normal_distribution"],
+        "estimated_minutes": 20
+      },
+      {
+        "topic_id": "correlation_causation",
+        "title": "Correlation, Causation, and Confounding",
+        "learning_objective": "Distinguish between associative correlations and causal relationships by identifying confounding variables.",
+        "difficulty": "beginner",
+        "prerequisites": [],
+        "estimated_minutes": 12
+      }
+    ]
+  }
+]

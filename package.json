@@ -1,0 +1,27 @@
+{
+  "name": "learning-pathways-pwa",
+  "version": "1.0.0",
+  "description": "Individually Customized Learning Pathways Progressive Web App and Developer Framework",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.7"
+  },
+  "keywords": [
+    "pwa",
+    "udl",
+    "adaptive-learning",
+    "universal-design-for-learning",
+    "educational-technology"
+  ],
+  "author": "Antigravity Dev Framework",
+  "license": "MIT"
+}
