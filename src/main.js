@@ -22,7 +22,7 @@ let isOffline = !navigator.onLine;
 // Register Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('./sw.js')
       .then(reg => console.log('Service Worker registered:', reg.scope))
       .catch(err => console.warn('Service Worker registration failed:', err));
   });

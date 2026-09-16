@@ -41,6 +41,7 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
+  // Network first for APIs
   if (url.pathname.includes('/api/')) {
     event.respondWith(
       fetch(request).catch(() => caches.match(request))
@@ -48,6 +49,7 @@ self.addEventListener('fetch', event => {
     return;
   }
 
+  // Stale-while-revalidate for static files
   event.respondWith(
     caches.match(request).then(cached => {
       const fetchPromise = fetch(request).then(networkRes => {
